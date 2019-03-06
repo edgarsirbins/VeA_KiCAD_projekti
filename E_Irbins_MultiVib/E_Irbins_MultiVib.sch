@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:E_Irbins_MultiVib-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -113,28 +112,6 @@ F 3 "~" H 5450 3700 50  0001 C CNN
 	1    5450 3700
 	0    1    1    0   
 $EndComp
-$Comp
-L Transistor_BJT:BC548 Q1
-U 1 1 5C6E700C
-P 4550 4300
-F 0 "Q1" H 4740 4346 50  0000 L CNN
-F 1 "BC548" H 4740 4255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4750 4225 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4550 4300 50  0001 L CNN
-	1    4550 4300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC548 Q2
-U 1 1 5C6E7503
-P 5650 4300
-F 0 "Q2" H 5850 4350 50  0000 L CNN
-F 1 "BC548" H 5850 4250 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5850 4225 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5650 4300 50  0001 L CNN
-	1    5650 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3700 2950 3700 2400
 Wire Wire Line
@@ -158,39 +135,74 @@ Wire Wire Line
 	4800 3300 4800 3700
 Wire Wire Line
 	4450 3300 4450 3700
-Connection ~ 4800 3700
-Connection ~ 5300 3700
-Wire Wire Line
-	5750 4100 5750 3700
 Wire Wire Line
 	5600 3700 5750 3700
 Wire Wire Line
-	4450 4100 4450 3700
-Connection ~ 4450 3700
-Wire Wire Line
 	4450 3700 4500 3700
 Wire Wire Line
-	4750 4300 5300 4300
-Wire Wire Line
-	5300 4300 5300 3700
-Wire Wire Line
-	5450 4300 5450 4100
-Wire Wire Line
-	5450 4100 4800 4100
-Wire Wire Line
-	4800 4100 4800 3700
-Wire Wire Line
 	3700 3350 3700 4500
-Connection ~ 5750 3700
-Wire Wire Line
-	3700 4500 4450 4500
 Wire Wire Line
 	5300 2400 5750 2400
 Wire Wire Line
 	3700 2400 4450 2400
 Wire Wire Line
 	4800 2400 5300 2400
+$Comp
+L md_biblioteka(dual_NPN):BC846BS Q1
+U 1 1 5C8054CD
+P 5100 4250
+F 0 "Q1" H 5100 4575 50  0000 C CNN
+F 1 "BC846BS" H 5100 4484 50  0000 C CNN
+F 2 "" H 5100 4500 50  0001 C CNN
+F 3 "" H 5100 4500 50  0001 C CNN
+	1    5100 4250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4450 4500 5750 4500
-Connection ~ 4450 4500
+	4800 3700 4800 4050
+Wire Wire Line
+	4800 4050 4600 4050
+Wire Wire Line
+	4600 4050 4600 4250
+Wire Wire Line
+	4600 4250 4700 4250
+Connection ~ 4800 3700
+Wire Wire Line
+	5300 3700 5300 4050
+Wire Wire Line
+	5300 4050 5600 4050
+Wire Wire Line
+	5600 4050 5600 4250
+Wire Wire Line
+	5600 4250 5500 4250
+Connection ~ 5300 3700
+Wire Wire Line
+	4450 3700 4450 3900
+Wire Wire Line
+	4450 3900 5700 3900
+Wire Wire Line
+	5700 3900 5700 4150
+Wire Wire Line
+	5700 4150 5500 4150
+Connection ~ 4450 3700
+Wire Wire Line
+	5750 3700 5750 4000
+Wire Wire Line
+	5750 4000 4500 4000
+Wire Wire Line
+	4500 4000 4500 4350
+Wire Wire Line
+	4500 4350 4700 4350
+Connection ~ 5750 3700
+Wire Wire Line
+	3700 4500 4650 4500
+Wire Wire Line
+	4650 4500 4650 4150
+Wire Wire Line
+	4650 4150 4700 4150
+Wire Wire Line
+	4650 4500 5500 4500
+Wire Wire Line
+	5500 4500 5500 4350
+Connection ~ 4650 4500
 $EndSCHEMATC
