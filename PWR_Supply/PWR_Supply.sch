@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:PWR_Supply-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,33 +15,228 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 750  800  2300 2300
+S 3000 2350 1050 350 
 U 5C818A75
-F0 "Sheet5C818A74" 50
+F0 "220V AC to 20V DC" 50
 F1 "file5C818A74.sch" 50
+F2 "VCC" O R 4050 2450 50 
+F3 "GND" O R 4050 2600 50 
 $EndSheet
 $Sheet
-S 3450 800  2550 2300
-U 5C818A78
-F0 "Sheet5C818A77" 50
-F1 "file5C818A77.sch" 50
-$EndSheet
-$Sheet
-S 6300 800  2500 2300
+S 4700 2700 1000 350 
 U 5C818A7B
-F0 "Sheet5C818A7A" 50
+F0 "20V DC to 5V DC" 50
 F1 "file5C818A7A.sch" 50
+F2 "GND" I L 4700 2950 50 
+F3 "VCC" I L 4700 2800 50 
+F4 "+5v" I R 5700 2950 50 
 $EndSheet
 $Sheet
-S 700  3400 2350 2200
+S 4700 2050 1000 350 
 U 5C818A7E
-F0 "Sheet5C818A7D" 50
+F0 "20V DC to 9V DC" 50
 F1 "file5C818A7D.sch" 50
+F2 "GND" I L 4700 2300 50 
+F3 "VCC" I L 4700 2150 50 
+F4 "+9v" I R 5700 2300 50 
 $EndSheet
 $Sheet
-S 3450 3400 2550 2300
+S 4700 3300 1000 350 
 U 5C818A81
-F0 "Sheet5C818A80" 50
+F0 "20V DC to 3.3V DC" 50
 F1 "file5C818A80.sch" 50
+F2 "GND" I L 4700 3550 50 
+F3 "VCC" I L 4700 3400 50 
+F4 "+3.3v" I R 5700 3550 50 
 $EndSheet
+$Sheet
+S 4700 1450 1000 350 
+U 5C818A78
+F0 "20V DC to 12V DC" 50
+F1 "file5C818A77.sch" 50
+F2 "GND" I L 4700 1700 50 
+F3 "VCC" I L 4700 1550 50 
+F4 "+12v" I R 5700 1700 50 
+$EndSheet
+Wire Wire Line
+	4050 2450 4150 2450
+Wire Wire Line
+	4150 2450 4150 2150
+Wire Wire Line
+	4150 1550 4700 1550
+Wire Wire Line
+	4050 2600 4400 2600
+Wire Wire Line
+	4400 2600 4400 2300
+Wire Wire Line
+	4400 1700 4700 1700
+Wire Wire Line
+	4400 2300 4700 2300
+Connection ~ 4400 2300
+Wire Wire Line
+	4400 2300 4400 1700
+Wire Wire Line
+	4150 2150 4700 2150
+Connection ~ 4150 2150
+Wire Wire Line
+	4150 2150 4150 1550
+Wire Wire Line
+	4150 2450 4150 2800
+Wire Wire Line
+	4150 2800 4700 2800
+Connection ~ 4150 2450
+Wire Wire Line
+	4400 2600 4400 2950
+Wire Wire Line
+	4400 2950 4700 2950
+Connection ~ 4400 2600
+Wire Wire Line
+	4400 2950 4400 3550
+Wire Wire Line
+	4400 3550 4700 3550
+Connection ~ 4400 2950
+Wire Wire Line
+	4150 2800 4150 3400
+Wire Wire Line
+	4150 3400 4700 3400
+Connection ~ 4150 2800
+Entry Wire Line
+	5950 1700 6050 1800
+Entry Wire Line
+	5950 2300 6050 2400
+Entry Wire Line
+	5950 2950 6050 3050
+Entry Wire Line
+	5950 3550 6050 3650
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C959414
+P 8250 1550
+AR Path="/5C818A75/5C959414" Ref="J?"  Part="1" 
+AR Path="/5C959414" Ref="J2"  Part="1" 
+F 0 "J2" H 8170 1225 50  0000 C CNN
+F 1 "+12V_OUT" H 8170 1316 50  0000 C CNN
+F 2 "" H 8250 1550 50  0001 C CNN
+F 3 "~" H 8250 1550 50  0001 C CNN
+	1    8250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C959621
+P 8250 2150
+AR Path="/5C818A75/5C959621" Ref="J?"  Part="1" 
+AR Path="/5C959621" Ref="J3"  Part="1" 
+F 0 "J3" H 8170 1825 50  0000 C CNN
+F 1 "+9V_OUT" H 8170 1916 50  0000 C CNN
+F 2 "" H 8250 2150 50  0001 C CNN
+F 3 "~" H 8250 2150 50  0001 C CNN
+	1    8250 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C959923
+P 8250 2750
+AR Path="/5C818A75/5C959923" Ref="J?"  Part="1" 
+AR Path="/5C959923" Ref="J4"  Part="1" 
+F 0 "J4" H 8170 2425 50  0000 C CNN
+F 1 "+5V_OUT" H 8170 2516 50  0000 C CNN
+F 2 "" H 8250 2750 50  0001 C CNN
+F 3 "~" H 8250 2750 50  0001 C CNN
+	1    8250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C959CD9
+P 8250 3400
+AR Path="/5C818A75/5C959CD9" Ref="J?"  Part="1" 
+AR Path="/5C959CD9" Ref="J5"  Part="1" 
+F 0 "J5" H 8170 3075 50  0000 C CNN
+F 1 "+3.3V_OUT" H 8170 3166 50  0000 C CNN
+F 2 "" H 8250 3400 50  0001 C CNN
+F 3 "~" H 8250 3400 50  0001 C CNN
+	1    8250 3400
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7650 1750 7750 1650
+Entry Wire Line
+	7650 1650 7750 1550
+Entry Wire Line
+	7650 2250 7750 2150
+Entry Wire Line
+	7650 2350 7750 2250
+Entry Wire Line
+	7650 2850 7750 2750
+Entry Wire Line
+	7650 2950 7750 2850
+Entry Wire Line
+	7650 3500 7750 3400
+Entry Wire Line
+	5950 3900 6050 4000
+Wire Wire Line
+	4400 3550 4400 3900
+Connection ~ 4400 3550
+Text Label 5850 3900 0    50   ~ 0
+GND
+Text Label 5800 3550 0    50   ~ 0
++3.3V
+Text Label 5850 2950 0    50   ~ 0
++5V
+Text Label 5850 2300 0    50   ~ 0
++9V
+Text Label 5800 1700 0    50   ~ 0
++12V
+Text Label 7800 1550 0    50   ~ 0
++12V
+Text Label 7850 2150 0    50   ~ 0
++9V
+Text Label 7850 2750 0    50   ~ 0
++5V
+Text Label 7800 3400 0    50   ~ 0
++3.3V
+Text Label 7850 1650 0    50   ~ 0
+GND
+Text Label 7850 2250 0    50   ~ 0
+GND
+Text Label 7850 2850 0    50   ~ 0
+GND
+Text Label 7850 3500 0    50   ~ 0
+GND
+Wire Bus Line
+	6050 1650 7650 1650
+Entry Wire Line
+	7650 3600 7750 3500
+Wire Wire Line
+	7750 1550 8050 1550
+Wire Wire Line
+	7750 1650 8050 1650
+Wire Wire Line
+	7750 2150 8050 2150
+Wire Wire Line
+	7750 2250 8050 2250
+Wire Wire Line
+	7750 2750 8050 2750
+Wire Wire Line
+	7750 2850 8050 2850
+Wire Wire Line
+	7750 3400 8050 3400
+Wire Wire Line
+	7750 3500 8050 3500
+Wire Wire Line
+	4400 3900 5950 3900
+Wire Wire Line
+	5950 3550 5700 3550
+Wire Wire Line
+	5950 2950 5700 2950
+Wire Wire Line
+	5950 2300 5700 2300
+Wire Wire Line
+	5950 1700 5700 1700
+Wire Bus Line
+	6050 1650 6050 4000
+Wire Bus Line
+	7650 1650 7650 3600
 $EndSCHEMATC

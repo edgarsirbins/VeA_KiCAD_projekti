@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:PWR_Supply-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,48 +15,141 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J1
 U 1 1 5C818AA8
-P 1600 2750
-F 0 "J?" H 1520 2425 50  0000 C CNN
-F 1 "Conn_01x02" H 1520 2516 50  0000 C CNN
-F 2 "" H 1600 2750 50  0001 C CNN
-F 3 "~" H 1600 2750 50  0001 C CNN
-	1    1600 2750
+P 4000 4100
+F 0 "J?" H 3920 3775 50  0000 C CNN
+F 1 "AC_IN" H 3920 3866 50  0000 C CNN
+F 2 "" H 4000 4100 50  0001 C CNN
+F 3 "~" H 4000 4100 50  0001 C CNN
+	1    4000 4100
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Transformer_1P_1S T?
+L Device:Transformer_1P_1S T1
 U 1 1 5C818C33
-P 2500 2700
-F 0 "T?" H 2500 3078 50  0000 C CNN
-F 1 "Transformer_1P_1S" H 2500 2987 50  0000 C CNN
-F 2 "" H 2500 2700 50  0001 C CNN
-F 3 "~" H 2500 2700 50  0001 C CNN
-	1    2500 2700
+P 4900 4050
+F 0 "T?" H 4900 4500 50  0000 C CNN
+F 1 "Transformer_420P_38S" H 4900 4400 50  0000 C CNN
+F 2 "" H 4900 4050 50  0001 C CNN
+F 3 "~" H 4900 4050 50  0001 C CNN
+	1    4900 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 2650 2000 2650
+	4200 4000 4400 4000
 Wire Wire Line
-	2000 2650 2000 2500
+	4400 4000 4400 3850
 Wire Wire Line
-	2000 2500 2100 2500
+	4400 3850 4500 3850
 Wire Wire Line
-	1800 2750 2000 2750
+	4200 4100 4400 4100
 Wire Wire Line
-	2000 2750 2000 2900
+	4400 4100 4400 4250
 Wire Wire Line
-	2000 2900 2100 2900
+	4400 4250 4500 4250
 $Comp
-L Diode_Bridge:ABS4 D?
+L Diode_Bridge:ABS4 D1
 U 1 1 5C818F04
-P 3600 2650
-F 0 "D?" H 3941 2696 50  0000 L CNN
-F 1 "ABS4" H 3941 2605 50  0000 L CNN
-F 2 "Diode_SMD:Diode_Bridge_Diotec_ABS" H 3750 2775 50  0001 L CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf" H 3600 2650 50  0001 C CNN
-	1    3600 2650
+P 6000 4050
+F 0 "D?" H 6341 4096 50  0000 L CNN
+F 1 "ABS4" H 6341 4005 50  0000 L CNN
+F 2 "Diode_SMD:Diode_Bridge_Diotec_ABS" H 6150 4175 50  0001 L CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf" H 6000 4050 50  0001 C CNN
+	1    6000 4050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5300 4250 5650 4250
+Wire Wire Line
+	5650 4250 5650 4350
+Wire Wire Line
+	5650 4350 6000 4350
+Wire Wire Line
+	5300 3850 5650 3850
+Wire Wire Line
+	5650 3850 5650 3750
+Wire Wire Line
+	5650 3750 6000 3750
+$Comp
+L Device:CP C1
+U 1 1 5C92B814
+P 6850 4150
+F 0 "C?" H 6968 4196 50  0000 L CNN
+F 1 "470uF" H 6968 4105 50  0000 L CNN
+F 2 "" H 6888 4000 50  0001 C CNN
+F 3 "~" H 6850 4150 50  0001 C CNN
+	1    6850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3900 6300 4050
+Wire Wire Line
+	5700 4450 5700 4050
+Wire Wire Line
+	6850 3900 6850 4000
+Wire Wire Line
+	6850 4300 6850 4450
+Text HLabel 7300 3900 2    50   Output ~ 0
+VCC
+Text HLabel 7300 4450 2    50   Output ~ 0
+GND
+Text Notes 6600 4200 0    50   ~ 0
+50V
+Connection ~ 6850 3900
+Wire Wire Line
+	6850 3900 7200 3900
+Wire Wire Line
+	6300 3900 6850 3900
+Connection ~ 6850 4450
+Wire Wire Line
+	6850 4450 7200 4450
+Wire Wire Line
+	5700 4450 6550 4450
+Text Notes 4650 3550 0    50   ~ 0
+220V to 20V
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C93DB74
+P 7200 3900
+F 0 "#FLG?" H 7200 3975 50  0001 C CNN
+F 1 "PWR_FLAG" H 7200 4073 50  0000 C CNN
+F 2 "" H 7200 3900 50  0001 C CNN
+F 3 "~" H 7200 3900 50  0001 C CNN
+	1    7200 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 7200 3900
+Wire Wire Line
+	7200 3900 7300 3900
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5C94C48A
+P 7200 4450
+F 0 "#FLG?" H 7200 4525 50  0001 C CNN
+F 1 "PWR_FLAG" H 7200 4623 50  0000 C CNN
+F 2 "" H 7200 4450 50  0001 C CNN
+F 3 "~" H 7200 4450 50  0001 C CNN
+	1    7200 4450
+	-1   0    0    1   
+$EndComp
+Connection ~ 7200 4450
+Wire Wire Line
+	7200 4450 7300 4450
+$Comp
+L power:GND #PWR01
+U 1 1 5C94EE52
+P 6550 4650
+F 0 "#PWR?" H 6550 4400 50  0001 C CNN
+F 1 "GND" H 6555 4477 50  0000 C CNN
+F 2 "" H 6550 4650 50  0001 C CNN
+F 3 "" H 6550 4650 50  0001 C CNN
+	1    6550 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4450 6550 4650
+Connection ~ 6550 4450
+Wire Wire Line
+	6550 4450 6850 4450
 $EndSCHEMATC

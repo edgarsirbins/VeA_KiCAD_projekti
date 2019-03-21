@@ -1,0 +1,111 @@
+EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5C818AA8
+P 1600 2750
+F 0 "J1" H 1520 2425 50  0000 C CNN
+F 1 "AC_IN" H 1520 2516 50  0000 C CNN
+F 2 "" H 1600 2750 50  0001 C CNN
+F 3 "~" H 1600 2750 50  0001 C CNN
+	1    1600 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Transformer_1P_1S T1
+U 1 1 5C818C33
+P 2500 2700
+F 0 "T1" H 2500 3150 50  0000 C CNN
+F 1 "Transformer_420P_38S" H 2500 3050 50  0000 C CNN
+F 2 "" H 2500 2700 50  0001 C CNN
+F 3 "~" H 2500 2700 50  0001 C CNN
+	1    2500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2650 2000 2650
+Wire Wire Line
+	2000 2650 2000 2500
+Wire Wire Line
+	2000 2500 2100 2500
+Wire Wire Line
+	1800 2750 2000 2750
+Wire Wire Line
+	2000 2750 2000 2900
+Wire Wire Line
+	2000 2900 2100 2900
+$Comp
+L Diode_Bridge:ABS4 D1
+U 1 1 5C818F04
+P 3600 2700
+F 0 "D1" H 3941 2746 50  0000 L CNN
+F 1 "ABS4" H 3941 2655 50  0000 L CNN
+F 2 "Diode_SMD:Diode_Bridge_Diotec_ABS" H 3750 2825 50  0001 L CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf" H 3600 2700 50  0001 C CNN
+	1    3600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2900 3250 2900
+Wire Wire Line
+	3250 2900 3250 3000
+Wire Wire Line
+	3250 3000 3600 3000
+Wire Wire Line
+	2900 2500 3250 2500
+Wire Wire Line
+	3250 2500 3250 2400
+Wire Wire Line
+	3250 2400 3600 2400
+$Comp
+L Device:CP C1
+U 1 1 5C92B814
+P 4450 2800
+F 0 "C1" H 4568 2846 50  0000 L CNN
+F 1 "470uF" H 4568 2755 50  0000 L CNN
+F 2 "" H 4488 2650 50  0001 C CNN
+F 3 "~" H 4450 2800 50  0001 C CNN
+	1    4450 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2550 3900 2700
+Wire Wire Line
+	3300 3100 3300 2700
+Wire Wire Line
+	4450 2550 4450 2650
+Wire Wire Line
+	4450 2950 4450 3100
+Text HLabel 4900 2550 2    50   Output ~ 0
+VCC
+Text HLabel 4900 3100 2    50   Output ~ 0
+GND
+Text Notes 4200 2850 0    50   ~ 0
+50V
+Connection ~ 4450 2550
+Wire Wire Line
+	4450 2550 4900 2550
+Wire Wire Line
+	3900 2550 4450 2550
+Connection ~ 4450 3100
+Wire Wire Line
+	4450 3100 4900 3100
+Wire Wire Line
+	3300 3100 4450 3100
+Text Notes 2250 2200 0    50   ~ 0
+220V to 20V
+$EndSCHEMATC
