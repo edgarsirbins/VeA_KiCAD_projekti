@@ -1,10 +1,10 @@
-(module SHDR2W90P0X508_1X2_1016X950X1500P_Conn (layer F.Cu) (tedit 5CCB1074)
+(module SHDR2W90P0X508_1X2_1016X950X1500P_Conn (layer F.Cu) (tedit 5CCB65B8)
   (descr "MC 1,5/ 2-G-3,81_a")
   (tags Connector)
   (fp_text reference J** (at 2.286 -6.858) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
-  (fp_text value SHDR2W90P0X508_1X2_1016X950X1500P_Conn (at 0 7.62) (layer F.SilkS) hide
+  (fp_text value SHDR2W90P0X508_1X2_1016X950X1500P_Conn (at 0 7.62) (layer F.Fab) hide
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
   (fp_line (start -2.79 5) (end -2.79 -5) (layer Dwgs.User) (width 0.05))
