@@ -1,14 +1,14 @@
 (export (version D)
   (design
-    (source "D:\\OneDrive\\VeA Elektronika\\Bakalaura 2. kurss\\2. semestris\\Datorizētā iespiedplašu projektēšana\\Lekciju darbi u.c\\VeA_KiCAD_projekti\\Battery\\Battery\\Battery.sch")
-    (date "02.05.2019 09:45:20")
-    (tool "Eeschema (5.1.0)-1")
+    (source "C:\\Users\\jj\\OneDrive\\VeA Elektronika\\Bakalaura 2. kurss\\2. semestris\\Datorizētā iespiedplašu projektēšana\\Lekciju darbi u.c\\VeA_KiCAD_projekti\\Battery\\Battery.sch")
+    (date "03.05.2019 00:38:23")
+    (tool "Eeschema (5.0.1)-4")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
-        (title)
+        (title "2IZB Edgars Irbiņš")
         (company)
         (rev)
-        (date)
+        (date 2019-05-03)
         (source Battery.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
@@ -17,7 +17,7 @@
   (components
     (comp (ref BT1)
       (value Battery_Cell)
-      (footprint Battery_Holder:SMTU2032)
+      (footprint Battery_Holder:Keystone_10mm_SM_COIN_CELL_CLIP)
       (datasheet ~)
       (libsource (lib Device) (part Battery_Cell) (description "Single-cell battery"))
       (sheetpath (names /) (tstamps /))
@@ -34,7 +34,7 @@
         (pin (num 2) (name -) (type passive)))))
   (libraries
     (library (logical Device)
-      (uri "D:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib")))
+      (uri "C:\\Program Files (x86)\\KiCad\\share\\kicad\\library/Device.lib")))
   (nets
     (net (code 1) (name +3V3)
       (node (ref BT1) (pin 1)))

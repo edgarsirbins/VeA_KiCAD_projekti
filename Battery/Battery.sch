@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
-EELAYER 29 0
+LIBS:Battery-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
+Title "2IZB Edgars Irbiņš"
+Date "2019-05-03"
 Rev ""
 Comp ""
 Comment1 ""
@@ -19,7 +20,7 @@ U 1 1 5CCA8621
 P 5950 4250
 F 0 "BT1" H 6068 4346 50  0000 L CNN
 F 1 "Battery_Cell" H 6068 4255 50  0000 L CNN
-F 2 "Battery_Holder:SMTU2032" V 5950 4310 50  0001 C CNN
+F 2 "Battery_Holder:Keystone_10mm_SM_COIN_CELL_CLIP" V 5950 4310 50  0001 C CNN
 F 3 "~" V 5950 4310 50  0001 C CNN
 	1    5950 4250
 	1    0    0    -1  
