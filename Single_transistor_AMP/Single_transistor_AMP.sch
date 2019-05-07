@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Single_transistor_AMP-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -136,13 +136,13 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5C8A2EFA
-P 6750 3950
-F 0 "J2" H 6669 3625 50  0000 C CNN
-F 1 "Signal_OUT" H 6669 3716 50  0000 C CNN
-F 2 "Single_transistor_AMP:SHDR2W90P0X508_1X2_1016X950X1500P_Conn" H 6750 3950 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/324/ItemDetail_1888687-919494.pdf" H 6750 3950 50  0001 C CNN
-	1    6750 3950
-	1    0    0    1   
+P 6750 3850
+F 0 "J2" H 6750 4100 50  0000 C CNN
+F 1 "Signal_OUT" H 6750 4000 50  0000 C CNN
+F 2 "Single_transistor_AMP:SHDR2W90P0X508_1X2_1016X950X1500P_Conn" H 6750 3850 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/324/ItemDetail_1888687-919494.pdf" H 6750 3850 50  0001 C CNN
+	1    6750 3850
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
@@ -172,8 +172,6 @@ Wire Wire Line
 	5650 4250 6050 4250
 Wire Wire Line
 	5650 3850 6550 3850
-Wire Wire Line
-	6550 3950 6550 4050
 Connection ~ 5650 3550
 Wire Wire Line
 	5650 3550 5750 3550
@@ -221,13 +219,13 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5C9CA615
-P 6500 3450
-F 0 "J3" H 6419 3125 50  0000 C CNN
-F 1 "+12V_IN" H 6419 3216 50  0000 C CNN
-F 2 "Single_transistor_AMP:SHDR2W90P0X508_1X2_1016X950X1500P_Conn" H 6500 3450 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/324/ItemDetail_1888687-919494.pdf" H 6500 3450 50  0001 C CNN
-	1    6500 3450
-	1    0    0    1   
+P 6500 3350
+F 0 "J3" H 6500 3600 50  0000 C CNN
+F 1 "+12V_IN" H 6500 3500 50  0000 C CNN
+F 2 "Single_transistor_AMP:SHDR2W90P0X508_1X2_1016X950X1500P_Conn" H 6500 3350 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/324/ItemDetail_1888687-919494.pdf" H 6500 3350 50  0001 C CNN
+	1    6500 3350
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6050 3550 6200 3550
@@ -249,4 +247,7 @@ F 3 "" H 6300 3550 50  0001 C CNN
 	1    6300 3550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6550 3950 6550 4050
+Connection ~ 6300 3550
 $EndSCHEMATC
