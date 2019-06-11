@@ -1,0 +1,556 @@
+EESchema Schematic File Version 4
+LIBS:shema-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "2.IZB Edgars Irbiņš (Innovative traffic light scheme) MCU"
+Date "2019-01-18"
+Rev "1"
+Comp "VeA"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U?
+U 1 1 5C4105F2
+P 3600 3550
+F 0 "U?" H 3600 1964 50  0000 C CNN
+F 1 "ATmega328P" H 3600 1851 79  0000 R BIB
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 3600 3550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 3600 3550 50  0001 C CNN
+	1    3600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C410931
+P 5800 5400
+F 0 "#PWR0101" H 5800 5150 50  0001 C CNN
+F 1 "GND" H 5805 5176 118 0000 C CNB
+F 2 "" H 5800 5400 50  0001 C CNN
+F 3 "" H 5800 5400 50  0001 C CNN
+	1    5800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:SBC18-11EGWA U?
+U 1 1 5C411FEE
+P 5700 4750
+F 0 "U?" H 5700 5417 50  0000 C CNN
+F 1 "5161AS" H 5700 5326 79  0000 C BIB
+F 2 "Display_7Segment:SBC18-11SURKCGKWA" H 4970 4040 50  0001 L CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/SBC18-11EGWA.pdf" H 5700 4940 50  0001 L CNN
+	1    5700 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Buzzer BZ?
+U 1 1 5C41208A
+P 6100 4950
+F 0 "BZ?" V 6174 4763 50  0000 R CNN
+F 1 "TMB12A05" V 6061 4763 79  0000 C BIB
+F 2 "" V 6075 5050 50  0001 C CNN
+F 3 "~" V 6075 5050 50  0001 C CNN
+	1    6100 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 5050 3600 5050
+$Comp
+L power:+5V #PWR0102
+U 1 1 5C41387E
+P 5700 2000
+F 0 "#PWR0102" H 5700 1850 50  0001 C CNN
+F 1 "+5V" H 5715 2165 118 0000 C BNB
+F 2 "" H 5700 2000 50  0001 C CNN
+F 3 "" H 5700 2000 50  0001 C CNN
+	1    5700 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3600 5050
+$Comp
+L power:VCC #PWR0103
+U 1 1 5C414704
+P 4250 4850
+F 0 "#PWR0103" H 4250 4700 50  0001 C CNN
+F 1 "VCC" V 4268 4977 39  0000 R TNB
+F 2 "" H 4250 4850 50  0001 C CNN
+F 3 "" H 4250 4850 50  0001 C CNN
+	1    4250 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 4850 4250 4850
+$Comp
+L Display_Character:RC1602A U?
+U 1 1 5C4157FA
+P 7200 2800
+F 0 "U?" H 7200 3722 50  0000 C CNN
+F 1 "1602A" H 7200 3609 79  0000 C TIB
+F 2 "Display:RC1602A" H 7300 2000 50  0001 C CNN
+F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 7300 2700 50  0001 C CNN
+	1    7200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5050 3600 5300
+Wire Wire Line
+	3600 5300 4700 5300
+Wire Wire Line
+	4700 5350 4700 5300
+Connection ~ 4700 5300
+Wire Wire Line
+	7200 3500 7200 3750
+Wire Wire Line
+	7200 5300 6000 5300
+Connection ~ 6000 5300
+Wire Wire Line
+	7600 3000 7700 3000
+Wire Wire Line
+	7700 3000 7700 5300
+Wire Wire Line
+	7700 5300 7200 5300
+Connection ~ 7200 5300
+$Comp
+L Device:R_POT RV?
+U 1 1 5C4173A5
+P 7750 2600
+F 0 "RV?" H 7681 2554 50  0000 R CNN
+F 1 "10 kOhm" H 7681 2645 50  0000 R CNN
+F 2 "" H 7750 2600 50  0001 C CNN
+F 3 "~" H 7750 2600 50  0001 C CNN
+	1    7750 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 2750 7700 2750
+Wire Wire Line
+	7700 2750 7700 3000
+Connection ~ 7700 3000
+Wire Wire Line
+	3600 2050 3600 2000
+Wire Wire Line
+	7200 2000 7200 2100
+Wire Wire Line
+	7200 2000 7750 2000
+Wire Wire Line
+	7750 2000 7750 2450
+Connection ~ 7200 2000
+$Comp
+L Device:R_Small R?
+U 1 1 5C41D219
+P 5300 5050
+F 0 "R?" V 5104 5050 50  0000 C CNN
+F 1 "330 Ohm" V 5195 5050 50  0000 C TNN
+F 2 "" H 5300 5050 50  0001 C CNN
+F 3 "~" H 5300 5050 50  0001 C CNN
+	1    5300 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C41D29D
+P 5300 4950
+F 0 "R?" V 5104 4950 50  0000 C CNN
+F 1 "330 Ohm" V 5195 4950 50  0000 C TNN
+F 2 "" H 5300 4950 50  0001 C CNN
+F 3 "~" H 5300 4950 50  0001 C CNN
+	1    5300 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C41D313
+P 5300 4850
+F 0 "R?" V 5104 4850 50  0000 C CNN
+F 1 "330 Ohm" V 5195 4850 50  0000 C TNN
+F 2 "" H 5300 4850 50  0001 C CNN
+F 3 "~" H 5300 4850 50  0001 C CNN
+	1    5300 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C41D38F
+P 5300 4750
+F 0 "R?" V 5104 4750 50  0000 C CNN
+F 1 "330 Ohm" V 5195 4750 50  0000 C TNN
+F 2 "" H 5300 4750 50  0001 C CNN
+F 3 "~" H 5300 4750 50  0001 C CNN
+	1    5300 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C41D411
+P 5300 4650
+F 0 "R?" V 5104 4650 50  0000 C CNN
+F 1 "330 Ohm" V 5195 4650 50  0000 C TNN
+F 2 "" H 5300 4650 50  0001 C CNN
+F 3 "~" H 5300 4650 50  0001 C CNN
+	1    5300 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C41D495
+P 5300 4550
+F 0 "R?" V 5104 4550 50  0000 C CNN
+F 1 "330 Ohm" V 5195 4550 50  0000 C TNN
+F 2 "" H 5300 4550 50  0001 C CNN
+F 3 "~" H 5300 4550 50  0001 C CNN
+	1    5300 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C41D513
+P 5300 4450
+F 0 "R?" V 5104 4450 50  0000 C CNN
+F 1 "330 Ohm" V 5195 4450 50  0000 C TNN
+F 2 "" H 5300 4450 50  0001 C CNN
+F 3 "~" H 5300 4450 50  0001 C CNN
+	1    5300 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 5050 6000 5150
+Wire Wire Line
+	6000 5150 6000 5300
+Connection ~ 6000 5150
+Wire Wire Line
+	6800 3000 4300 3000
+Wire Wire Line
+	4300 3000 4300 3250
+Wire Wire Line
+	4300 3250 4200 3250
+Wire Wire Line
+	6800 3100 4400 3100
+Wire Wire Line
+	4400 3100 4400 3350
+Wire Wire Line
+	4400 3350 4200 3350
+Wire Wire Line
+	6800 3200 4500 3200
+Wire Wire Line
+	4500 3200 4500 3450
+Wire Wire Line
+	4500 3450 4200 3450
+Wire Wire Line
+	4600 3300 4600 3550
+Wire Wire Line
+	4600 3550 4200 3550
+Wire Wire Line
+	4600 3300 6800 3300
+$Comp
+L Device:LED D?
+U 1 1 5C4252D7
+P 7050 3750
+F 0 "D?" H 7042 3495 50  0000 C CNN
+F 1 "LED" H 7042 3586 50  0000 C BNN
+F 2 "" H 7050 3750 50  0001 C CNN
+F 3 "~" H 7050 3750 50  0001 C CNN
+	1    7050 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C425365
+P 7050 4000
+F 0 "D?" H 7042 3745 50  0000 C CNN
+F 1 "LED" H 7042 3836 50  0000 C BNN
+F 2 "" H 7050 4000 50  0001 C CNN
+F 3 "~" H 7050 4000 50  0001 C CNN
+	1    7050 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C4253FB
+P 7050 4250
+F 0 "D?" H 7042 3995 50  0000 C CNN
+F 1 "LED" H 7042 4086 50  0000 C BNN
+F 2 "" H 7050 4250 50  0001 C CNN
+F 3 "~" H 7050 4250 50  0001 C CNN
+	1    7050 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C42545B
+P 7050 4500
+F 0 "D?" H 7042 4245 50  0000 C CNN
+F 1 "LED" H 7042 4336 50  0000 C BNN
+F 2 "" H 7050 4500 50  0001 C CNN
+F 3 "~" H 7050 4500 50  0001 C CNN
+	1    7050 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C4254B9
+P 7050 4750
+F 0 "D?" H 7042 4495 50  0000 C CNN
+F 1 "LED" H 7042 4586 50  0000 C BNN
+F 2 "" H 7050 4750 50  0001 C CNN
+F 3 "~" H 7050 4750 50  0001 C CNN
+	1    7050 4750
+	-1   0    0    1   
+$EndComp
+Connection ~ 7200 3750
+Wire Wire Line
+	7200 3750 7200 4000
+Connection ~ 7200 4000
+Wire Wire Line
+	7200 4000 7200 4250
+Connection ~ 7200 4250
+Wire Wire Line
+	7200 4250 7200 4500
+Connection ~ 7200 4500
+Wire Wire Line
+	7200 4500 7200 4750
+Connection ~ 7200 4750
+Wire Wire Line
+	7200 4750 7200 5150
+$Comp
+L Device:R_Small R?
+U 1 1 5C428C58
+P 6800 3750
+F 0 "R?" V 6604 3750 50  0000 C CNN
+F 1 "1 kOhm" V 6695 3750 50  0000 C TNN
+F 2 "" H 6800 3750 50  0001 C CNN
+F 3 "~" H 6800 3750 50  0001 C CNN
+	1    6800 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C428CFA
+P 6800 4000
+F 0 "R?" V 6604 4000 50  0000 C CNN
+F 1 "1 kOhm" V 6695 4000 50  0000 C TNN
+F 2 "" H 6800 4000 50  0001 C CNN
+F 3 "~" H 6800 4000 50  0001 C CNN
+	1    6800 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C428D74
+P 6800 4250
+F 0 "R?" V 6604 4250 50  0000 C CNN
+F 1 "1 kOhm" V 6695 4250 50  0000 C TNN
+F 2 "" H 6800 4250 50  0001 C CNN
+F 3 "~" H 6800 4250 50  0001 C CNN
+	1    6800 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C428DD8
+P 6800 4500
+F 0 "R?" V 6604 4500 50  0000 C CNN
+F 1 "1 kOhm" V 6695 4500 50  0000 C TNN
+F 2 "" H 6800 4500 50  0001 C CNN
+F 3 "~" H 6800 4500 50  0001 C CNN
+	1    6800 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C428E5A
+P 6800 4750
+F 0 "R?" V 6604 4750 50  0000 C CNN
+F 1 "1 kOhm" V 6695 4750 50  0000 C TNN
+F 2 "" H 6800 4750 50  0001 C CNN
+F 3 "~" H 6800 4750 50  0001 C CNN
+	1    6800 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 2750 6750 2500
+Wire Wire Line
+	6750 2500 6800 2500
+Wire Wire Line
+	4200 2750 6750 2750
+Wire Wire Line
+	6700 2300 6800 2300
+Wire Wire Line
+	4200 2650 6700 2650
+Wire Wire Line
+	4200 2550 6650 2550
+Wire Wire Line
+	6700 2300 6700 2650
+Wire Wire Line
+	6650 2550 6650 2400
+Wire Wire Line
+	6650 2400 6800 2400
+Wire Wire Line
+	4200 2350 6550 2350
+Wire Wire Line
+	6500 2450 6500 4000
+Wire Wire Line
+	6500 4000 6700 4000
+Wire Wire Line
+	4200 2450 6500 2450
+Wire Wire Line
+	6550 3750 6550 2350
+Wire Wire Line
+	6550 3750 6700 3750
+Wire Wire Line
+	6700 4250 6600 4250
+Wire Wire Line
+	6600 4250 6600 4050
+Wire Wire Line
+	6600 4050 4200 4050
+Wire Wire Line
+	6700 4500 6600 4500
+Wire Wire Line
+	6600 4500 6600 4300
+Wire Wire Line
+	6600 4300 6550 4300
+Wire Wire Line
+	6550 4750 6550 4350
+Wire Wire Line
+	6550 4350 6500 4350
+Wire Wire Line
+	6500 4350 6500 4200
+Wire Wire Line
+	6500 4200 5450 4200
+Wire Wire Line
+	5450 4200 5450 4250
+Wire Wire Line
+	5450 4250 4200 4250
+Wire Wire Line
+	6550 4750 6700 4750
+$Comp
+L 4xxx:4543 U?
+U 1 1 5C4121AD
+P 4700 4750
+F 0 "U?" H 4700 5572 50  0000 C CNN
+F 1 "CD4543B" H 4700 5459 79  0000 C TIB
+F 2 "" H 4700 4750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4543b.pdf" H 4700 4750 50  0001 C CNN
+	1    4700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4100 6400 4100
+Wire Wire Line
+	6400 4100 6400 4000
+Wire Wire Line
+	6550 4100 6550 4300
+Wire Wire Line
+	6400 4000 4400 4000
+Wire Wire Line
+	4400 4000 4400 4150
+Wire Wire Line
+	4200 4150 4400 4150
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C464F87
+P 6700 5150
+F 0 "SW?" H 6700 5435 50  0000 C CNN
+F 1 "Button" H 6700 5344 50  0000 C CNN
+F 2 "" H 6700 5350 50  0001 C CNN
+F 3 "" H 6700 5350 50  0001 C CNN
+	1    6700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor:HC-SR04 U?
+U 1 1 5C47416A
+P 8100 3750
+F 0 "U?" H 7871 3682 50  0000 R CNN
+F 1 "HC-SR04" H 7871 3795 79  0000 R CIB
+F 2 "" H 8250 4000 50  0001 C CNN
+F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Sensirion_Humidity_Sensors_SHT1x_Datasheet.pdf" H 8250 4000 50  0001 C CNN
+	1    8100 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8200 4050 8200 5300
+Wire Wire Line
+	8200 5300 7700 5300
+Connection ~ 7700 5300
+Wire Wire Line
+	8200 3450 8200 3100
+Wire Wire Line
+	8200 2000 7750 2000
+Connection ~ 7750 2000
+Wire Wire Line
+	6350 3850 6350 3650
+Wire Wire Line
+	6350 3650 4200 3650
+Wire Wire Line
+	6350 3850 7800 3850
+Wire Wire Line
+	7800 3650 6400 3650
+Wire Wire Line
+	6400 3650 6400 3750
+Wire Wire Line
+	6400 3750 4200 3750
+$Comp
+L Device:R_Small R?
+U 1 1 5C48CCDC
+P 7000 5150
+F 0 "R?" V 6804 5150 50  0000 C CNN
+F 1 "10 kOhm" V 6895 5150 50  0000 C TNN
+F 2 "" H 7000 5150 50  0001 C CNN
+F 3 "~" H 7000 5150 50  0001 C CNN
+	1    7000 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 5150 7200 5150
+Connection ~ 7200 5150
+Wire Wire Line
+	7200 5150 7200 5300
+Wire Wire Line
+	6350 5150 6350 4150
+Wire Wire Line
+	6350 4150 5400 4150
+Wire Wire Line
+	5400 4300 4350 4300
+Wire Wire Line
+	4350 4300 4350 4350
+Wire Wire Line
+	4350 4350 4200 4350
+Wire Wire Line
+	6350 5150 6500 5150
+Wire Wire Line
+	5400 4150 5400 4300
+Connection ~ 6000 5050
+Wire Wire Line
+	6200 5050 6250 5050
+Wire Wire Line
+	6250 5050 6250 2850
+Wire Wire Line
+	4200 2850 6250 2850
+Connection ~ 5700 2000
+Wire Wire Line
+	5700 2000 7200 2000
+Wire Wire Line
+	3600 2000 4700 2000
+Wire Wire Line
+	7600 3100 8200 3100
+Connection ~ 8200 3100
+Wire Wire Line
+	8200 3100 8200 2000
+Wire Wire Line
+	4700 4150 4700 2000
+Connection ~ 4700 2000
+Wire Wire Line
+	4700 2000 5700 2000
+Wire Wire Line
+	4700 5300 5800 5300
+Wire Wire Line
+	5800 5400 5800 5300
+Connection ~ 5800 5300
+Wire Wire Line
+	5800 5300 6000 5300
+$EndSCHEMATC
