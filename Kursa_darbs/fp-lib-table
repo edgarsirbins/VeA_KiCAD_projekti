@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Kursa_darbs)(type KiCad)(uri ${KIPRJMOD}/Kursa_darbs.pretty)(options "")(descr "Footprinti kursa darba ietvaros"))
+)
