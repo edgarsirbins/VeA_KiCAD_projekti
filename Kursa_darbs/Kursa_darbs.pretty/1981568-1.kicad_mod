@@ -1,4 +1,4 @@
-(module 1981568-1 (layer F.Cu) (tedit 5D013839)
+(module 1981568-1 (layer F.Cu) (tedit 5D0155D8)
   (descr 1981568-1)
   (tags Connector)
   (attr smd)
@@ -30,4 +30,9 @@
   (pad 9 smd rect (at 3.425 -2.75 90) (size 1.3 1.45) (layers F.Cu F.Paste F.Mask))
   (pad 10 smd rect (at -1.15 -2.75 90) (size 1.9 1.9) (layers F.Cu F.Paste F.Mask))
   (pad 11 smd rect (at 1.15 -2.75 90) (size 1.9 1.9) (layers F.Cu F.Paste F.Mask))
+  (model "C:/Users/jj/OneDrive/VeA Elektronika/Bakalaura 2. kurss/2. semestris/Datorizētā iespiedplašu projektēšana/Kursa darbs/3D modeļi/Micro_USB/USB_Micro-B_Molex_47346-0001.wrl"
+    (offset (xyz 0 4 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

@@ -1,4 +1,4 @@
-(module SC56-11EWA (layer F.Cu) (tedit 5D00EA28)
+(module SC56-11EWA (layer F.Cu) (tedit 5D014F5B)
   (descr SC56-11EWA)
   (tags Display)
   (fp_text reference DS** (at 5.27 -19.31) (layer F.SilkS)
@@ -115,4 +115,9 @@
   (pad 8 thru_hole circle (at 5.08 -15.24) (size 2 2) (drill 1) (layers *.Cu *.Mask))
   (pad 9 thru_hole circle (at 2.54 -15.24) (size 2 2) (drill 1) (layers *.Cu *.Mask))
   (pad 10 thru_hole circle (at 0 -15.24) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  (model "C:/Users/jj/OneDrive/VeA Elektronika/Bakalaura 2. kurss/2. semestris/Datorizētā iespiedplašu projektēšana/Kursa darbs/3D modeļi/7_Segm_Disp/7SegmentLED_LTS6760_LTS6780.wrl"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -90))
+  )
 )

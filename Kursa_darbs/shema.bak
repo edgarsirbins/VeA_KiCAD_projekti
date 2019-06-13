@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Kursa_darbs"
+Title "Kursa_darbs (eeschema)"
 Date "2019-06-12"
-Rev "v.1.0"
+Rev "v.1.1"
 Comp "Ventspils Augstskola"
 Comment1 "Autors"
-Comment2 "Edgars Irbiņš"
+Comment2 "2IZB Edgars Irbiņš"
 Comment3 "PCB_CAD kurss"
 Comment4 ""
 $EndDescr
@@ -39,12 +39,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0102
 U 1 1 5C41387E
-P 5700 1800
-F 0 "#PWR0102" H 5700 1650 50  0001 C CNN
-F 1 "+5V" H 5715 1965 118 0000 C BNB
-F 2 "" H 5700 1800 50  0001 C CNN
-F 3 "" H 5700 1800 50  0001 C CNN
-	1    5700 1800
+P 5700 1900
+F 0 "#PWR0102" H 5700 1750 50  0001 C CNN
+F 1 "+5V" H 5715 2065 118 0000 C BNB
+F 2 "" H 5700 1900 50  0001 C CNN
+F 3 "" H 5700 1900 50  0001 C CNN
+	1    5700 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -61,83 +61,6 @@ Wire Wire Line
 	3600 2050 3600 2000
 Wire Wire Line
 	7200 2000 7200 2100
-$Comp
-L Device:R_Small R7
-U 1 1 5C41D219
-P 5300 5050
-F 0 "R7" V 5300 5050 50  0000 C CNN
-F 1 "330 Ohm" V 5200 5050 50  0000 C TNN
-F 2 "Kursa_darbs:RESC3216X60N" H 5300 5050 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 5050 50  0001 C CNN
-	1    5300 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 5C41D29D
-P 5300 4950
-F 0 "R6" V 5300 4950 50  0000 C CNN
-F 1 "330 Ohm" V 5200 4950 50  0000 C TNN
-F 2 "Kursa_darbs:RESC3216X60N" H 5300 4950 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4950 50  0001 C CNN
-	1    5300 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 5C41D313
-P 5300 4850
-F 0 "R5" V 5300 4850 50  0000 C CNN
-F 1 "330 Ohm" V 5200 4850 50  0000 C TNN
-F 2 "Kursa_darbs:RESC3216X60N" H 5300 4850 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4850 50  0001 C CNN
-	1    5300 4850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 5C41D38F
-P 5300 4750
-F 0 "R4" V 5300 4750 50  0000 C CNN
-F 1 "330 Ohm" V 5200 4750 50  0000 C TNN
-F 2 "Kursa_darbs:RESC3216X60N" H 5300 4750 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4750 50  0001 C CNN
-	1    5300 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5C41D411
-P 5300 4650
-F 0 "R3" V 5300 4650 50  0000 C CNN
-F 1 "330 Ohm" V 5200 4650 50  0000 C TNN
-F 2 "Kursa_darbs:RESC3216X60N" H 5300 4650 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4650 50  0001 C CNN
-	1    5300 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5C41D495
-P 5300 4550
-F 0 "R2" V 5300 4550 50  0000 C CNN
-F 1 "330 Ohm" V 5200 4550 50  0000 C TNN
-F 2 "Kursa_darbs:RESC3216X60N" H 5300 4550 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4550 50  0001 C CNN
-	1    5300 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5C41D513
-P 5300 4450
-F 0 "R1" V 5300 4450 50  0000 C CNN
-F 1 "330 Ohm" V 5200 4450 50  0000 C TNN
-F 2 "Kursa_darbs:RESC3216X60N" H 5300 4450 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4450 50  0001 C CNN
-	1    5300 4450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6000 5050 6000 5150
 Wire Wire Line
@@ -226,8 +149,8 @@ $Comp
 L Device:R_Small R11
 U 1 1 5C428DD8
 P 6800 4500
-F 0 "R11" V 6800 4500 50  0000 C CNN
-F 1 "1 kOhm" V 6695 4500 50  0000 C TNN
+F 0 "R11" V 6725 4500 50  0000 C CNN
+F 1 "103" V 6775 4500 39  0000 C TNN
 F 2 "Kursa_darbs:RESC3216X60N" H 6800 4500 50  0001 C CNN
 F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 6800 4500 50  0001 C CNN
 	1    6800 4500
@@ -237,15 +160,15 @@ $Comp
 L Device:R_Small R12
 U 1 1 5C428E5A
 P 6800 4750
-F 0 "R12" V 6800 4750 50  0000 C CNN
-F 1 "1 kOhm" V 6695 4750 50  0000 C TNN
+F 0 "R12" V 6725 4750 50  0000 C CNN
+F 1 "103" V 6775 4750 39  0000 C TNN
 F 2 "Kursa_darbs:RESC3216X60N" H 6800 4750 50  0001 C CNN
 F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 6800 4750 50  0001 C CNN
 	1    6800 4750
 	0    1    1    0   
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L kursa_darbs:SW_Push SW1
 U 1 1 5C464F87
 P 6700 5150
 F 0 "SW1" H 6700 5300 50  0000 C CNN
@@ -272,8 +195,8 @@ $Comp
 L Device:R_Small R13
 U 1 1 5C48CCDC
 P 7000 5150
-F 0 "R13" V 7000 5150 50  0000 C CNN
-F 1 "10 kOhm" V 6895 5150 50  0000 C TNN
+F 0 "R13" V 6925 5150 50  0000 C CNN
+F 1 "103" V 6975 5150 39  0000 C TNN
 F 2 "Kursa_darbs:RESC3216X60N" H 7000 5150 50  0001 C CNN
 F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 7000 5150 50  0001 C CNN
 	1    7000 5150
@@ -300,8 +223,6 @@ Wire Wire Line
 	5400 4200 5400 4300
 Wire Wire Line
 	5800 5300 6000 5300
-NoConn ~ 3000 2650
-NoConn ~ 3000 2550
 NoConn ~ 3000 2350
 NoConn ~ 3700 2050
 NoConn ~ 4200 2950
@@ -339,29 +260,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/cd4543b.pdf" H 4700 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5D055059
-P 5800 5400
-F 0 "#FLG0101" H 5800 5475 50  0001 C CNN
-F 1 "PWR_FLAG" V 5800 5527 50  0000 L CNN
-F 2 "" H 5800 5400 50  0001 C CNN
-F 3 "~" H 5800 5400 50  0001 C CNN
-	1    5800 5400
-	0    -1   -1   0   
-$EndComp
-Connection ~ 5800 5400
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5D056BD6
-P 5700 1850
-F 0 "#FLG0102" H 5700 1925 50  0001 C CNN
-F 1 "PWR_FLAG" V 5700 2000 50  0000 L CNN
-F 2 "" H 5700 1850 50  0001 C CNN
-F 3 "~" H 5700 1850 50  0001 C CNN
-	1    5700 1850
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:VCC #PWR0104
 U 1 1 5D063A2F
 P 5700 1900
@@ -377,12 +275,6 @@ Wire Wire Line
 Connection ~ 5700 2000
 Wire Wire Line
 	5700 2000 7200 2000
-Connection ~ 5700 1850
-Wire Wire Line
-	5700 1850 5700 1800
-Connection ~ 5700 1900
-Wire Wire Line
-	5700 1900 5700 1850
 Wire Wire Line
 	7200 4250 7200 4500
 $Comp
@@ -411,7 +303,7 @@ Connection ~ 7200 2000
 Wire Wire Line
 	7200 2000 8200 2000
 Wire Wire Line
-	7200 5300 8200 5300
+	7200 5300 7600 5300
 Wire Wire Line
 	8200 2000 8200 3450
 Connection ~ 6000 5050
@@ -438,13 +330,13 @@ F 3 "https://eu.mouser.com/datasheet/2/271/REC001602AWPP5N00000%20datasheet-7606
 	1    0    0    -1  
 $EndComp
 $Comp
-L kursa_darbs:ATmega328P-AU U1
+L kursa_darbs:ATmega328-PU U1
 U 1 1 5C4105F2
 P 3600 3550
 F 0 "U1" H 4150 5000 50  0000 C CNN
-F 1 "ATmega328PB-AU" H 3600 1851 79  0000 R BIB
-F 2 "Kursa_darbs:TQFP-32_7x7mm_P0.8mm" H 3600 3550 50  0001 C CIN
-F 3 "https://eu.mouser.com/datasheet/2/268/40001906A-1222909.pdf" H 3600 3550 50  0001 C CNN
+F 1 "ATmega328P-PU" H 3600 1851 79  0000 R BIB
+F 2 "Kursa_darbs:DIP1016W53P254L3468H457Q28N" H 3600 3550 50  0001 C CIN
+F 3 "https://eu.mouser.com/datasheet/2/268/Atmel-8271-8-bit-AVR-Microcontroller-ATmega48A-48P-1315288.pdf" H 3600 3550 50  0001 C CNN
 	1    3600 3550
 	1    0    0    -1  
 $EndComp
@@ -602,20 +494,6 @@ Wire Wire Line
 	4200 2850 6300 2850
 Wire Wire Line
 	3600 2000 5700 2000
-Wire Bus Line
-	6600 4150 6600 4650
-Wire Bus Line
-	4300 3950 4300 4150
-Wire Bus Line
-	4300 2450 4300 2650
-Wire Bus Line
-	6600 2250 6600 3900
-Wire Bus Line
-	4300 3150 4300 3450
-Wire Bus Line
-	6700 2200 6700 2450
-Wire Bus Line
-	6700 2900 6700 3450
 $Comp
 L power:VCC #PWR0105
 U 1 1 5D0D6CCE
@@ -626,5 +504,132 @@ F 2 "" H 4700 4150 50  0001 C CNN
 F 3 "" H 4700 4150 50  0001 C CNN
 	1    4700 4150
 	1    0    0    -1  
+$EndComp
+$Comp
+L kursa_darbs:USB_B_Micro J1
+U 1 1 5D0D98FA
+P 7700 4750
+F 0 "J1" H 7757 5217 50  0000 C CNN
+F 1 "USB_B_Micro" H 7757 5126 50  0000 C CNN
+F 2 "Kursa_darbs:1981568-1" H 7850 4700 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/418/NG_CD_1981568_E2-621296.pdf" H 7850 4700 50  0001 C CNN
+	1    7700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5150 7600 5300
+Connection ~ 7600 5300
+Wire Wire Line
+	7600 5300 7700 5300
+Wire Wire Line
+	7700 5150 7700 5300
+Connection ~ 7700 5300
+Wire Wire Line
+	7700 5300 8200 5300
+NoConn ~ 8000 4750
+NoConn ~ 8000 4850
+NoConn ~ 8000 4950
+$Comp
+L power:VCC #PWR0106
+U 1 1 5D0E6FF8
+P 8000 4550
+F 0 "#PWR0106" H 8000 4400 50  0001 C CNN
+F 1 "VCC" V 8018 4677 39  0000 R TNB
+F 2 "" H 8000 4550 50  0001 C CNN
+F 3 "" H 8000 4550 50  0001 C CNN
+	1    8000 4550
+	0    1    1    0   
+$EndComp
+Connection ~ 5700 1900
+Wire Bus Line
+	6600 2250 6600 3900
+Wire Bus Line
+	4300 2450 4300 2650
+Wire Bus Line
+	6600 4150 6600 4650
+Wire Bus Line
+	4300 3950 4300 4150
+Wire Bus Line
+	4300 3150 4300 3450
+Wire Bus Line
+	6700 2200 6700 2450
+Wire Bus Line
+	6700 2900 6700 3450
+$Comp
+L Device:R_Small R1
+U 1 1 5C41D513
+P 5300 4450
+F 0 "R1" H 5250 4350 50  0000 C CNN
+F 1 "331" V 5275 4450 39  0000 C TNN
+F 2 "Kursa_darbs:RESC3216X60N" H 5300 4450 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4450 50  0001 C CNN
+	1    5300 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5C41D495
+P 5300 4550
+F 0 "R2" H 5250 4450 50  0000 C CNN
+F 1 "331" V 5275 4550 39  0000 C TNN
+F 2 "Kursa_darbs:RESC3216X60N" H 5300 4550 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4550 50  0001 C CNN
+	1    5300 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5C41D411
+P 5300 4650
+F 0 "R3" H 5250 4550 50  0000 C CNN
+F 1 "331" V 5275 4650 39  0000 C TNN
+F 2 "Kursa_darbs:RESC3216X60N" H 5300 4650 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4650 50  0001 C CNN
+	1    5300 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5C41D38F
+P 5300 4750
+F 0 "R4" H 5250 4650 50  0000 C CNN
+F 1 "331" V 5275 4750 39  0000 C TNN
+F 2 "Kursa_darbs:RESC3216X60N" H 5300 4750 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4750 50  0001 C CNN
+	1    5300 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5C41D313
+P 5300 4850
+F 0 "R5" H 5250 4750 50  0000 C CNN
+F 1 "331" V 5275 4850 39  0000 C TNN
+F 2 "Kursa_darbs:RESC3216X60N" H 5300 4850 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4850 50  0001 C CNN
+	1    5300 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5C41D29D
+P 5300 4950
+F 0 "R6" H 5250 4850 50  0000 C CNN
+F 1 "331" V 5275 4950 39  0000 C TNN
+F 2 "Kursa_darbs:RESC3216X60N" H 5300 4950 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 4950 50  0001 C CNN
+	1    5300 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5C41D219
+P 5300 5050
+F 0 "R7" H 5250 4950 50  0000 C CNN
+F 1 "331" V 5275 5050 39  0000 C TNN
+F 2 "Kursa_darbs:RESC3216X60N" H 5300 5050 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/427/crcwce3-1223726.pdf" H 5300 5050 50  0001 C CNN
+	1    5300 5050
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
