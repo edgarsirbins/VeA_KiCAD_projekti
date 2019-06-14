@@ -1,4 +1,4 @@
-(module REC001602AWPP5N00000 (layer F.Cu) (tedit 5A02FE80)
+(module REC001602AWPP5N00000 (layer F.Cu) (tedit 5D0375E2)
   (descr "LCD 16x2 http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf")
   (tags "LCD 16x2 Alphanumeric 16pin")
   (fp_text reference REF** (at -5.82 -3.81) (layer F.SilkS)

@@ -1,4 +1,4 @@
-(module DIP1016W53P254L3468H457Q28N (layer F.Cu) (tedit 5D018B13)
+(module DIP1016W53P254L3468H457Q28N (layer F.Cu) (tedit 5D0375BC)
   (descr atmega328pu)
   (tags "Integrated Circuit")
   (fp_text reference IC** (at -7.1 -0.1 90) (layer F.SilkS)

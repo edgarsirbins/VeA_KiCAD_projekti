@@ -1,4 +1,4 @@
-(module CD4543B_PW_16 (layer F.Cu) (tedit 5D0155D1)
+(module CD4543B_PW_16 (layer F.Cu) (tedit 5D0375B4)
   (fp_text reference REF** (at 0.01 -3.89) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
